@@ -79,12 +79,14 @@ namespace xl2txt
             
             foreach (string xlsFile in _xlsFiles)
             {
-                  if (!(xlsFile.Substring(xlsFile.Length - 4, 4) == ".xls" || xlsFile.Substring(xlsFile.Length - 4, 4) == ".xml" || xlsFile.Substring(xlsFile.Length - 5, 5) == ".xlsx"))
+                  //if (!(xlsFile.Substring(xlsFile.Length - 4, 4) == ".xls" || xlsFile.Substring(xlsFile.Length - 4, 4) == ".xml" || xlsFile.Substring(xlsFile.Length - 5, 5) == ".xlsx"))
+                  if (!(xlsFile.Substring(xlsFile.Length - 4, 4) == ".xls" || xlsFile.Substring(xlsFile.Length - 5, 5) == ".xlsx"))
                     xlsPartsCnt--;
             }
             foreach (string xlsFile in _xlsFiles)
             {
-                if (xlsFile.Substring(xlsFile.Length - 4, 4) == ".xls" || xlsFile.Substring(xlsFile.Length - 4, 4) == ".xml" || xlsFile.Substring(xlsFile.Length - 5, 5) == ".xlsx")
+                //if (xlsFile.Substring(xlsFile.Length - 4, 4) == ".xls" || xlsFile.Substring(xlsFile.Length - 4, 4) == ".xml" || xlsFile.Substring(xlsFile.Length - 5, 5) == ".xlsx")
+                if (xlsFile.Substring(xlsFile.Length - 4, 4) == ".xls" || xlsFile.Substring(xlsFile.Length - 5, 5) == ".xlsx")
                 {
                     cntFile++;
                     string[] file = xlsFile.Split('\\');
